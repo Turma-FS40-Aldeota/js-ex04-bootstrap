@@ -1,0 +1,39 @@
+/* Arquivo reset.css */
+/* Reset propriedades CSS */
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove padding padrão */
+  box-sizing: border-box; /* Garante que width/height incluam padding e bordas */
+}
+
+html {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%; /* Garante que imagens respeitem o tamanho do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+ul,
+ol {
+  list-style: none; /* Remove as bolinhas e números de listas */
+}
+
+button,
+input {
+  border: none; /* Remove as bordas padrões de botões e inputs */
+  background: none; /* Remove fundo padrão */
+  font-family: inherit; /* Usa a mesma fonte definida para o body */
+}
+
+a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  color: inherit; /* Garante que os links herdem a cor do texto */
+}
+
+table {
+  border-collapse: collapse; /* Remove espaçamento entre bordas de tabelas */
+  border-spacing: 0; /* Garante que não haja espaçamento entre células */
+}
+/* Fim do CSS Reset */

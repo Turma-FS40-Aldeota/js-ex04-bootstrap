@@ -1,0 +1,81 @@
+<!-- Arquivo: index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercício-04</title>
+
+  <!-- Configuração Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/logo-favicon.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Links Font Awsome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap -->
+  <link href="bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <script src="bootstrap/bootstrap.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="container">
+    <div class="d-flex justify-content-between py-4 align-items-center">
+      <!-- Logo no lado esquerdo -->
+      <div class="logo">
+        <a href="index.html"><img src="assets/images/logo.svg" class="img-thumbnail" alt="Logo" width="50" /></a>
+      </div>
+
+      <!-- Texto centralizado -->
+      <span class="mx-auto font-weight-bold h2">Exercício04 - JavaScript & Bootstrap</span>
+
+      <!-- Menu no lado direito -->
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link anchor" href="src/calculoConsumoMensal.html">Cálculo Salário Mensal</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="mt-4">
+      <h3>Apresentação do Projeto</h3>
+      <p>
+        Este site foi desenvolvido como solução para o Exercício 04 da
+        disciplina de Desenvolvimento Full Stack, ministrada pelo professor
+        Eduardo Rosseo na Digital College. O objetivo é demonstrar a aplicação
+        prática dos conceitos de JavaScript e Bootstrap4 através da resolução
+        de problemas práticos.
+      </p>
+
+      <h4>Exercício:</h4>
+
+      <ol>
+        <li class="numeral">
+          Calcular Salário Mensal de um Vendedor: Calcula o Salário Mensal de um Vendedor considerando sua comissão.
+          <br /><b>Implementado na opção "Cálculo Salário Mensal" do Menu.</b>
+        </li>
+      </ol>
+    </div>
+  </main>
+
+  <footer class="container mt-5 py-4 custom-bg-color text-black text-center">
+    <hr class="bg-dark" />
+    <div>
+      <span>JEAS Softwares - 2024 &copy; Todos os Direitos Reservados</span>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+/* Arquivo Style.css */
+header {
+  background-color: #a2bcf5;
+  margin: 5px;
+}
+
+.anchor:hover {
+  text-decoration: underline;
+}
+
+.numeral {
+  list-style: decimal;
+}
+
+#resultado-area {
+  min-height: 50px;             /* Define uma altura mínima para a área */
+  background-color: #f8f9fa;  /* Cor de fundo clara */
+  border-radius: 5px;
+}
+
+footer {
+  background-color: aqua;
+}
+
+.custom-bg-color {
+  background-color: #a2bcf5;
+}
