@@ -1,11 +1,11 @@
-<!-- Arquivo: calculoConsumoMensal.html -->
+<!-- Arquivo: calculoSalarioMensal.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cálculo Consumo Mensal</title>
+  <title>Cálculo Salário Mensal</title>
 
   <!-- Configuração Favicon -->
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/logo-favicon.png" />
@@ -33,8 +33,7 @@
       </div>
 
       <!-- Texto centralizado -->
-      <span class="mx-auto font-weight-bold h2">Exercício03 - JavaScript & Bootstrap - Cálculo do Valor do Consumo
-        Mensal</span>
+      <span class="mx-auto font-weight-bold h2">Exercício04 - JavaScript & Bootstrap - Cálculo do Salário Mensal</span>
 
       <!-- Menu no lado direito -->
       <!--
@@ -52,28 +51,23 @@
   <main class="container mt-5">
     <div class="form-group">
       <div class="col-lg-4">
-        <label for="nome">Nome do Cliente:</label>
-        <input type="text" id="nome" class="form-control" placeholder="Digite o nome do cliente..." />
+        <label for="nome">Nome do Vendedor:</label>
+        <input type="text" id="nome" class="form-control" placeholder="Digite o nome do vendedor..." />
       </div>
 
       <div class="col-lg-4 mt-3">
-        <label for="tipo">Informe Tipo do Cliente:</label>
-
-        <select class="form-select" id="tipo">
-          <option selected>---</option>
-          <option value="1">Residencial</option>
-          <option value="2">Comercial</option>
-          <option value="3">Industrial</option>
-        </select>
-      </div>
-
-      <div class="col-lg-4 mt-3">
-        <label for="consumo">Consumo Mensal:</label>
-        <input type="number" id="consumo" class="form-control" placeholder="Informe o consumo mensal do cliente..." />
+        <label for="fixo">Salário Fixo:</label>
+        <input type="number" id="fixo" class="form-control" placeholder="Informe o Salário Fixo do Vendedor..." />
       </div>
     </div>
 
-    <button id=" btn-somar" onclick="calcularConsumo()" class="btn btn-primary mt-3">
+    <div class="col-lg-4 mt-3">
+      <label for="vendas">Valor Total de Vendas:</label>
+      <input type="number" id="vendas" class="form-control" placeholder="Informe o Total de Vendas Mensal do Vendedor..." />
+    </div>
+  </div>
+
+  <button id=" btn-somar" onclick="calcularSalario()" class="btn btn-primary mt-3">
       Calcular
     </button>
     <button id=" btn-limpar" onclick="limpar()" class="btn btn-primary mt-3">
@@ -93,7 +87,7 @@
     </div>
   </footer>
 
-  <script src="../js/calcularConsumo.js"></script>
+  <script src="../js/calcularSalario.js"></script>
 </body>
 
 </html>
