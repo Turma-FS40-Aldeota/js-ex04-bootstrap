@@ -15,7 +15,10 @@ function calcularSalario() {
     if (nome !== "" && fixo !== ""  && vendas !==0) 
     {
         salario = fixo + (vendas * comissao/100);
-        document.getElementById('resultado').textContent = "Valor Salário Mensal do(a) Vendedor " + nome + ": R$ " + salario.toFixed(2);
+
+        var salarioFormatado = salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+
+        document.getElementById('resultado').textContent = "Valor Salário Mensal do(a) Vendedor " + nome + ": " + salarioFormatado;
     }
     else
     {
