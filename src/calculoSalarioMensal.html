@@ -48,29 +48,41 @@
     </div>
   </header>
 
-  <main class="container mt-5">
+  <main class="container mt-3">
+
     <div class="form-group">
-      <div class="col-lg-4">
+      <div class="col-lg-4 mb-3">
         <label for="nome">Nome do Vendedor:</label>
         <input type="text" id="nome" class="form-control" placeholder="Digite o nome do vendedor..." />
       </div>
+    </div>
 
-      <div class="col-lg-4 mt-3">
+    <div class="form-group">
+      <div class="col-lg-2 mb-3">
         <label for="fixo">Salário Fixo:</label>
-        <input type="number" id="fixo" class="form-control" placeholder="Informe o Salário Fixo do Vendedor..." />
+        <input type="number" id="fixo" class="form-control" placeholder="Informe Salário Fixo..." />
       </div>
     </div>
 
-    <div class="col-lg-4 mt-3">
-      <label for="vendas">Valor Total de Vendas:</label>
-      <input type="number" id="vendas" class="form-control" placeholder="Informe o Total de Vendas Mensal do Vendedor..." />
+    <div class="form-group">
+      <div class="col-lg-2 mb-3">
+        <label for="vendas">Valor Total de Vendas:</label>
+        <input type="number" id="vendas" class="form-control" placeholder="Informe Total Vendas..." />
+      </div>
     </div>
-  </div>
 
-  <button id=" btn-somar" onclick="calcularSalario()" class="btn btn-primary mt-3">
+    <div class="form-group">
+      <div class="col-lg-1 mb-3">
+        <label for="comissao">Comissão:</label>
+        <input type="number" id="comissao" class="form-control"/>
+      </div>
+    </div>
+
+    <button id="btn-somar" onclick="calcularSalario()" class="btn btn-primary mt-2">
       Calcular
     </button>
-    <button id=" btn-limpar" onclick="limpar()" class="btn btn-primary mt-3">
+
+    <button id="btn-limpar" onclick="limpar()" class="btn btn-primary mt-2">
       Limpar
     </button>
 
@@ -80,7 +92,7 @@
     </div>
   </main>
 
-  <footer class="container mt-5 py-4 custom-bg-color text-black text-center">
+  <footer class="container mt-3 py-4 custom-bg-color text-black text-center">
     <hr class="bg-dark" />
     <div>
       <span>JEAS Softwares - 2024 &copy; Todos os Direitos Reservados</span>
